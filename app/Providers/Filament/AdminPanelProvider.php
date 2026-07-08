@@ -59,21 +59,22 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ])
-            ->multiFactorAuthentication([
-                AppAuthentication::make()
-                    ->recoverable()
-                    ->recoveryCodeCount(10)
-                    ->brandName('Filament Demo 2FA Cursos'),
-                // ->regenerableRecoveryCodes(false)
-                // ->codeWindow(4),
-                /**
-                    Si generas un código a las 10:00:00:
-                    codeWindow 8: Válido desde 09:56 hasta 10:04
-                    codeWindow 4: Válido desde 09:58 hasta 10:02
-                 */
-                EmailAuthentication::make()
-                // ->codeExpiryMinutes(2)
-            ], isRequired: true);
+            ]);
+
+        // ->multiFactorAuthentication([
+        //     AppAuthentication::make()
+        //         ->recoverable()
+        //         ->recoveryCodeCount(10)
+        //         ->brandName('Filament Demo 2FA Cursos'),
+        //     // ->regenerableRecoveryCodes(false)
+        //     // ->codeWindow(4),
+        //     /**
+        //         Si generas un código a las 10:00:00:
+        //         codeWindow 8: Válido desde 09:56 hasta 10:04
+        //         codeWindow 4: Válido desde 09:58 hasta 10:02
+        //      */
+        //     EmailAuthentication::make()
+        //     // ->codeExpiryMinutes(2)
+        // ], isRequired: true);
     }
 }
