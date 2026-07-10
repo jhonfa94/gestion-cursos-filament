@@ -140,3 +140,104 @@ sail artisan make:filament-relation-manager ModuleResource title
 
    INFO  Make sure to register the relation in [App\Filament\Resources\Courses\Resources\Modules\ModuleResource::getRelations()].
 ```
+
+
+## Creacion del Widget PlatformStatsWidget
+```bash
+ sail artisan make:filament-widget PlatformStatsWidget --stats-overview
+
+ ┌ Would you like to create this widget in a panel? ────────────┐
+ │ Yes                                                          │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Would you like to create this widget in a resource? ─────────┐
+ │ No                                                           │
+ └──────────────────────────────────────────────────────────────┘
+
+   INFO  Filament widget [App\Filament\Widgets\PlatformStatsWidget] created successfully
+```
+
+
+## Widget para graficas tipo donout
+```bash
+ sail artisan make:filament-widget CoursesByCategoryChart --chart
+
+ ┌ Would you like to create this widget in a panel? ────────────┐
+ │ Yes                                                          │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Would you like to create this widget in a resource? ─────────┐
+ │ No                                                           │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Which type of chart would you like to create? ───────────────┐
+ │ Doughnut chart                                               │
+ └──────────────────────────────────────────────────────────────┘
+
+   INFO  Filament widget [App\Filament\Widgets\CoursesByCategoryChart] created successfully.
+```
+
+## Widget para graficas tipo chart
+```bash
+ sail artisan make:filament-widget CoursesByLevelChart --chart
+
+ ┌ Would you like to create this widget in a panel? ────────────┐
+ │ Yes                                                          │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Would you like to create this widget in a resource? ─────────┐
+ │ No                                                           │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Which type of chart would you like to create? ───────────────┐
+ │ Bar chart                                                    │
+ └──────────────────────────────────────────────────────────────┘
+
+   INFO  Filament widget [App\Filament\Widgets\CoursesByLevelChart] created successfully.
+```
+
+## Widget para Top de Cursos 
+```bash
+ sail artisan make:filament-widget TopRatedCoursesWidget --table
+
+ ┌ Would you like to create this widget in a panel? ────────────┐
+ │ Yes                                                          │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Would you like to create this widget in a resource? ─────────┐
+ │ No                                                           │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ What is the model? ──────────────────────────────────────────┐
+ │ App\Models\Course                                            │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Should the table columns be generated from the current database columns? ┐
+ │ No                                                                       │
+ └──────────────────────────────────────────────────────────────────────────┘
+
+   INFO  Filament widget [App\Filament\Widgets\TopRatedCoursesWidget] created successfully.
+```
+
+## Widget para Top de Cursos 
+```bash
+ sail artisan make:filament-widget RecentActivityWidget --table
+
+ ┌ Would you like to create this widget in a panel? ────────────┐
+ │ Yes                                                          │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Would you like to create this widget in a resource? ─────────┐
+ │ No                                                           │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ What is the model? ──────────────────────────────────────────┐
+ │ App\Models\Review                                            │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Should the table columns be generated from the current database columns? ┐
+ │ No                                                                       │
+ └──────────────────────────────────────────────────────────────────────────┘
+
+   INFO  Filament widget [App\Filament\Widgets\RecentActivityWidget] created successfully.
+```
