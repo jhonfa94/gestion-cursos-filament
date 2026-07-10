@@ -241,3 +241,76 @@ sail artisan make:filament-relation-manager ModuleResource title
 
    INFO  Filament widget [App\Filament\Widgets\RecentActivityWidget] created successfully.
 ```
+
+
+# Resources 
+
+## Crear resource de User
+```bash
+sail artisan make:filament-resource User
+
+ The "title attribute" is used to label each record in the UI.
+
+ You can leave this blank if records do not have a title.
+
+ ┌ What is the title attribute for this model? ─────────────────┐
+ │ name                                                         │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Would you like to generate a read-only view page for the resource? ┐
+ │ No                                                                 │
+ └────────────────────────────────────────────────────────────────────┘
+
+ ┌ Should the configuration be generated from the current database columns? ┐
+ │ No                                                                       │
+ └──────────────────────────────────────────────────────────────────────────┘
+
+   INFO  Filament resource [App\Filament\Resources\Users\UserResource] created successfully.
+```
+
+## Crear el resource de Review
+```bash
+sail artisan make:filament-resource Review
+
+ The "title attribute" is used to label each record in the UI.
+
+ You can leave this blank if records do not have a title.
+
+ ┌ What is the title attribute for this model? ─────────────────┐
+ │ comment                                                      │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Would you like to generate a read-only view page for the resource? ┐
+ │ No                                                                 │
+ └────────────────────────────────────────────────────────────────────┘
+
+ ┌ Should the configuration be generated from the current database columns? ┐
+ │ No                                                                       │
+ └──────────────────────────────────────────────────────────────────────────┘
+
+   INFO  Filament resource [App\Filament\Resources\Reviews\ReviewResource] created successfully.
+```
+
+## Crear el resource de Article
+```bash
+sail artisan make:filament-resource Article
+
+ The "title attribute" is used to label each record in the UI.
+
+ You can leave this blank if records do not have a title.
+
+ ┌ What is the title attribute for this model? ─────────────────┐
+ │ title                                                        │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Would you like to generate a read-only view page for the resource? ┐
+ │ No                                                                 │
+ └────────────────────────────────────────────────────────────────────┘
+
+ ┌ Should the configuration be generated from the current database columns? ┐
+ │ No                                                                       │
+ └──────────────────────────────────────────────────────────────────────────┘
+
+   INFO  Filament resource [App\Filament\Resources\Articles\ArticleResource] created successfully.
+```
+
